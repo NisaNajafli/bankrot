@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assests/css/bootstrap.css">
+    <link rel="stylesheet" href="/assests/css/reset.css">
+    <link rel="stylesheet" href="/assests/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assests/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo_side">
+                    <img src="/assests/img/logowhitebg.webp" alt="">
+                </div>
+                <div class="menu_nav">
+                    <ul>
+                        <li><a class="menu_link active" href="">О компании</a></li>
+                        <li><a class="menu_link" href="">Услуги</a></li>
+                        <li><a class="menu_link" href="">Отзывы клиентов</a></li>
+                        <li><a class="menu_link" href="">Примеры дел</a></li>
+                        <li><a class="menu_link" href="">Команда</a></li>
+                        <li><a class="menu_link" href="">Мероприятия </a></li>
+                        <li><a class="menu_link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="social_icons">
+                    <a class="phone_icon" href="">+7 (777) xx xx</a>
+                    <a href="">
+                        <svg
+                         xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 682 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path fill-rule="evenodd" d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0" fill="currentColor" opacity="1" data-original="currentColor" class="hovered-path"></path></g>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg
+                         xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M501.974 41.949a30.939 30.939 0 0 0-30.555-6.565L21.231 183.785C8.962 187.829.642 198.781.035 211.684c-.606 12.904 6.649 24.589 18.483 29.768l111.335 48.712 33.591 155.795c1.395 6.472 4.68 12.237 11.639 14.01 7.039 1.793 12.012-2.054 17.264-5.986l82.62-61.865 96.589 79.039c5.626 4.606 12.502 7.008 19.513 7.008a31.091 31.091 0 0 0 9.986-1.657c10.166-3.447 17.702-11.744 20.159-22.193L511.18 71.813a30.938 30.938 0 0 0-9.206-29.864zm-302.43 276.128c-.055.13-.109.277-.16.453l-18.624 65.068-20.784-96.395 142.917-79.405-99.921 104.478a15.03 15.03 0 0 0-3.428 5.801zm5.911 88.525 8.459-29.555 8.091-28.269 28.991 23.724-45.541 34.1zM481.908 64.927l-89.965 382.502c-.045.19-.105.452-.545.601-.436.148-.648-.021-.798-.145l-105.691-86.488-.008-.007-48.969-40.072L393.255 156.82a15.035 15.035 0 0 0 1.035-19.579 15.034 15.034 0 0 0-19.204-3.955L142.135 262.715 30.572 213.902c-.34-.148-.527-.231-.5-.806.027-.573.221-.638.573-.754l450.188-148.4c.218-.071.464-.153.826.177.362.332.302.584.249.808z" fill="currentColor" opacity="1" data-original="currentColor" class=""></path></g>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+
+    <div class="swiper myHeroSwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide hero-bg">
+                <img src="/assests/img/slider.jpg" alt="">
+                <div class="hero-content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eaque quasi id tempore ullam voluptatem.</h1>
+                </div>
+            </div>
+
+            <div class="swiper-slide hero-bg">
+                <img src="/assests/img/slider.jpg" alt="">
+                <div class="hero-content">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores officia voluptate non explicabo fugiat nostrum ratione sit.</h1>
+                    <a class="page-index-intro__more" >
+                    <span>Узнать подробнее</span>
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 7C5.76507 7.00044 5.53238 6.95106 5.3153 6.8547C5.09821 6.75834 4.90102 6.61689 4.73505 6.4385L0 1.35719L1.26495 0L6 5.08035L10.7351 0L12 1.35719L7.26495 6.43754C7.09905 6.61611 6.90189 6.75772 6.6848 6.85425C6.46772 6.95078 6.23499 7.00031 6 7Z" fill="var(--icon-color, #002169)"></path>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-form-box">
+        <form>
+            <label>Имя</label>
+            <input type="text" placeholder="Введите ваше имя">
+
+            <label>Телефон</label>
+            <input type="text" placeholder="+7 (___) ___ __ __">
+
+            <label>Вопрос</label>
+            <input type="text" placeholder="Ваш вопрос">
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <!-- <div class="slider-arrows">
+        <div class="arrow prev swiper-button-prev"></div>
+        <div class="arrow next swiper-button-next"></div>
+    </div> -->
+    <div class="slider-buttons">
+                <div class="slider-buttons__item">
+                    <button class="slider-buttons__button" data-slider-button="1">
+                        <span class="slider-buttons__span">
+                            <span class="slider-buttons__hover">
+                                <svg class="slider-buttons__svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="slider-buttons__item">
+                    <button class="slider-buttons__button" data-slider-button="2">
+                        <span class="slider-buttons__span">
+                            <span class="slider-buttons__hover">
+                                <svg class="slider-buttons__svg right" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+</section>
+    </main>
+
+
+    <script src="/assests/bootstrap.js"></script>
+    <script src="/assests/swiper-bundle.min.js"></script>
+    <script src="/assests/main.js"></script>
+    <script>
+        const swiper = new Swiper(".myHeroSwiper", {
+    loop: true,
+    speed: 600,
+    navigation: {
+        nextEl: "[data-slider-button='2']",
+        prevEl: "[data-slider-button='1']"
+    }
+});
+    </script>
+</body>
+</html>

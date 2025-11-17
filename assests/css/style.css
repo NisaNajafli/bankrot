@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --blue: #3a567d;
+    --blue2: #acc4d2;
+    --blue3: #158fd4;
+    --text-black: #353535;
+    --br: 12px
+}
+*{
+    font-family: "Montserrat", sans-serif !important;
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin-bottom: 60px;
+}
+.section-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+}
+header{
+    height: 110px;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    background-color: #fff;
+}
+header::after{
+    position:absolute;
+    content: "";
+    top: 22%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/head-bg.png) no-repeat;
+    z-index: 0;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+nav .logo_side{
+    height: auto;
+    width: 130px;
+}
+nav .logo_side img{
+    width: 100%;
+    object-fit: cover;
+}
+nav .menu_nav{
+    margin-left: 160px;
+}
+nav .menu_nav ul{
+    display: flex;
+}
+nav .menu_nav .menu_link{
+    color: var(--text-black);
+    font-size: 13px;
+    padding: 0 15px;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+nav .menu_nav .menu_link::after{
+    position: absolute;
+    background: url(../img/line.png) center 0 no-repeat;
+    width: 6px;
+    height: 12px;
+    content: "";
+    top: 3px;
+    right: -4px;
+    color: #dee4e9;
+}
+nav .menu_link.active{
+        color: var(--blue);
+        font-weight: 400;
+}
+nav .menu_nav .menu_link:hover{
+    color: var(--blue3)
+}
+nav .menu_link:hover::after{
+    display: block;
+    content: '';
+    position: absolute;
+    left: -webkit-calc(50% - 5px);
+    left: calc(50% - 5px);
+    top: 30px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px;
+    border-color: transparent transparent var(--blue3);
+}
+nav .social_icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .social_icons .phone_icon{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 15px;
+    border:none;
+    background:#fff;
+    margin-right: 0;
+    padding-bottom: 10px !important;
+    position: relative;
+}
+nav .social_icons .phone_icon:hover{
+    color: var(--blue3);
+    background: #fff
+}
+
+nav .social_icons path{
+    fill: var(--blue);
+}
+nav .social_icons a{
+    padding: 10px;
+    border: 1px solid var(--blue2);
+    border-radius: var(--br);
+    background: #3a567d16;
+    margin-right: 10px;
+}
+nav .social_icons a:hover{
+    background: #3a567d25
+}
+
+.hero-slider {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 30%;
+    left: 60px;
+    width: 45%;
+    color: #fff;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+
+.hero-form-box {
+    position: absolute;
+    top: 30%;
+    right: 60px;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    z-index: 200;
+}
+
+.hero-form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.hero-form-box button {
+    width: 100%;
+    padding: 12px;
+    background: var(--blue);
+    border: none;
+    border-radius: var(--br);
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.hero-form-box label{
+    font-size: 18px;
+}
+
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color:#33333396;
+}
+.slider-buttons {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 300 !important;
+    display: flex;
+}
+
+.slider-buttons--dark .slider-buttons__button {
+    border-color: rgba(0,0,0,.1)
+}
+
+.slider-buttons--dark .slider-buttons__button:hover .slider-buttons__svg path {
+    stroke: #fff
+}
+
+.slider-buttons--dark .slider-buttons__svg path {
+    stroke: #181d1d
+}
+
+.slider-buttons__item:not(:first-child) {
+    margin-left: 1.4375rem
+}
+
+.slider-buttons__button {
+    --size: 8.75rem
+}
+
+.slider-buttons__button {
+    position: relative;
+    z-index: 0;
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsla(0,0%,100%,.3);
+    background: none;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.33, 1, 0.68, 1);
+    overflow: hidden
+}
+
+.slider-buttons__button:hover {
+    border-color: var(--blue);
+}
+
+.slider-buttons__button:hover::before {
+    transform: none
+}
+
+.slider-buttons__button:hover .slider-buttons__hover {
+    animation: MoveUpInitial .2s forwards,MoveUpEnd .2s forwards .2s
+}
+
+.slider-buttons__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateY(100%);
+    transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+    background-color: var(--blue)
+}
+
+.slider-buttons__span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    overflow: hidden
+}
+
+.slider-buttons__hover {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.slider-buttons__svg {
+    --size: 1.75rem
+}
+
+
+.slider-buttons__svg {
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg)
+}
+
+.slider-buttons__svg path {
+    stroke-width: 1px;
+    transition: .5s cubic-bezier(0.33, 1, 0.68, 1)
+}
+
+.slider-buttons__svg.right {
+    transform: rotate(-90deg)
+}
+@keyframes MoveUpInitial {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(0, -105%, 0)
+    }
+}
+
+@keyframes MoveUpEnd {
+    0% {
+        transform: translate3d(0, 100%, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+}
