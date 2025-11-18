@@ -12,8 +12,15 @@
 a{
     text-decoration: none;
 }
+.section-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
 section{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .section-title{
     font-size: 30px;
@@ -26,7 +33,7 @@ section{
 }
 header{
     height: 100px;
-    padding: 10px 0;
+    padding: 10px 30px;
     position: fixed;
     width: 100%;
     margin: 0 auto;
@@ -36,9 +43,9 @@ header{
 header::after{
     position:absolute;
     content: "";
-        top: 15%;
-    left: -20%;
+    top: 15%;
     height: 100%;
+    left: -130px;
     width: 100%;
     background: url(../img/head-bgnew.webp) no-repeat;
     z-index: 0;
@@ -97,7 +104,7 @@ nav .menu_link:hover::after{
     position: absolute;
     left: -webkit-calc(50% - 5px);
     left: calc(50% - 5px);
-    top: 47px;
+    top: 46px;
     height: 0;
     border-style: solid;
     border-width: 0 5px 10px;
@@ -143,7 +150,7 @@ nav .social_icons a:hover{
 }
 
 
-.swiper-slide img {
+.hero-slider .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -196,7 +203,7 @@ nav .social_icons a:hover{
 .swiper-slide{
     position: relative;
 }
-.swiper-slide::after{
+.hero-slider .swiper-slide::after{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -632,12 +639,7 @@ nav .social_icons a:hover{
     stroke: #333;
     transition: .5s cubic-bezier(0.33, 1, 0.68, 1)
 }
-.services_section-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
+
 .services_section .link--black{
     display: flex;
     align-items: center
@@ -719,9 +721,163 @@ nav .social_icons a:hover{
     gap: 20px;
     align-items:stretch
 }
-.services_section .only-mobile{
+.only-mobile{
     display: none;
 }
 .services_section .press-card__title{
     color: #333
+}
+.review-slide {
+    background: #fff !important;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #CDD1D8;
+    border-radius: 4px;
+}
+
+.review-video iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    display: block;
+}
+
+
+.review-card {
+    padding: 25px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.review-top {
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.reviews-swiper-section .review-logo {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.reviews-swiper-section .review-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.reviews-swiper-section .review-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 5px 0;
+}
+
+.reviews-swiper-section .review-case {
+    font-size: 15px;
+    color: #444;
+}
+
+.reviews-swiper-section .review-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.reviews-swiper-section .review-btn {
+    color: var(--blue3);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+.reviews-swiper-section .swiper-wrapper{
+    padding: 20px 0;
+}
+.examples-content{
+    display: grid;
+    grid-template-columns: repeat(3,31%);
+    justify-content: space-between;
+}
+.examples__item{
+    margin-bottom: 40px;
+    padding: 40px;
+    border: 1px solid #cdd1d8;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.examples__item:hover{
+    background-color: var(--blue)
+}
+.examples__item:hover .examples__title, .examples__item:hover .examples__price, .examples__item:hover .examples__name{
+    color:#fff
+} 
+.examples__item:hover .examples__link a, .examples__item:hover .examples__name span {
+    color: #fff
+}
+.examples__title {
+    margin-bottom: 18px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+    align-items:center
+}
+.examples__title path{
+    fill: var(--blue);
+    height: 25px;
+    width: 25px;
+}
+.examples__price{
+    font-size: 28px;
+    font-weight: 600;
+}
+.examples__name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.examples__name span{
+    color: #686868;
+    font-size: 12px;
+}
+.examples__link{
+    display: flex;
+    gap: 5px;
+    color: var(--blue3);
+    font-weight: 600;
+    font-size: 16px;
+}
+.examples__link:hover a{
+    text-decoration: underline;
+    color: var(--blue3)
+}
+.examples__link svg{
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+.examples__link path{
+    stroke: var(--blue3);
+}
+.examples__item:hover .examples__link path{
+    stroke: #fff;
+}
+.examples__item:hover .examples__title path{
+    fill: #fff;
 }
