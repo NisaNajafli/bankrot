@@ -139,7 +139,6 @@ nav .social_icons a:hover{
 
 .hero-slider {
     position: relative;
-    height: 100vh; 
     overflow: hidden;
 }
 
@@ -430,8 +429,17 @@ nav .social_icons a:hover{
     transform: none
 }
 
-.press-card:hover .press-card__title,.press-card:hover .press-card__num,.press-card:hover .press-card__text {
+.press-card:hover .press-card__title,.press-card:hover .press-card__num,.press-card:hover .press-card__text, .press-card:hover .press-card_desc {
     color: #fff !important
+}
+.press-card_desc {
+  display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-black);
 }
 
 .press-card:hover .press-card__wrapper {
@@ -497,8 +505,15 @@ nav .social_icons a:hover{
 
 .press-card__title {
     transition: color .5s cubic-bezier(0.33, 1, 0.68, 1);
-    font-size: 1.375rem;
-    line-height: 1.3
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: var(--blue3)
+    
+}
+.press-card_desc{
+    transition: color .5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 @media(max-width: 1279px) {
