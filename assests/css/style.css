@@ -1275,3 +1275,645 @@ nav .social_icons a:hover{
     transform: rotate(45deg)
 }
 
+.contact-footer {
+    background: var(--blue2);      
+    border-radius: 30px;
+}
+
+.onfooter-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 60px 0;
+    border-radius: 28px;
+    justify-content: space-between;
+}
+.contact-left{
+    background-color:#fff;
+    padding: 20px 40px;
+     border-radius: 30px;
+}
+.contact-left h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-form input {
+    width: 50%;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid var(--blue3);
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
+
+.contact-form input::placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+.form-buttom{
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    align-items:flex-start;
+}
+
+.contact-btn {
+    width: 300px;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.messengers {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    padding: 10px;
+    gap: 10px;
+}
+
+.messengers a {
+    /* width: 55px;
+    height: 55px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messengers img {
+    width: 28px;
+}
+
+.contact-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@media(max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-right img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+           #about .button {
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+                padding: 14px 60px 14px 30px;
+                font-family: 'Rubik';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.5;
+                color: white;
+                background-image: linear-gradient(90deg, var(--blue), var(--blue2));
+                border-radius: 30px;
+                border: 0;
+                overflow: hidden;
+                cursor: pointer
+            }
+
+            #about .button span {
+                position: relative;
+                z-index: 3;
+                display: inline-block;
+                margin-bottom: 1px;
+                will-change: transform;
+                transform: translateZ(0);
+                transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1)
+            }
+
+           #about .button:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(90deg, var(--blue), var(--blue2));
+                transition: opacity 0.4s ease-in-out;
+                opacity: 0
+            }
+
+           #about .button:before {
+                content: "";
+                position: absolute;
+                z-index: 3;
+                top: calc(50% - 5px);
+                right: 30px;
+                width: 10px;
+                height: 10px;
+                background: #fff;
+                border-radius: 50%;
+                will-change: transform;
+                transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1)
+            }
+
+           #about .button:hover:after {
+                opacity: 1
+            }
+
+           #about .button:hover:before {
+                transform: translate3d(45px, 0, 0) scale(0.5)
+            }
+
+          #about  .button:hover span {
+                transform: translate3d(15px, 0, 0)
+            }
+
+          #about  .button-white {
+                padding: 14px 30px;
+                font-size: 18px;
+                color: #2B2B2B;
+                background: #fff;
+                border: 1px solid var(--blue);
+                cursor: pointer;
+                transition: color 0.4s ease-in-out
+            }
+
+          #about  .button-white:hover {
+                color: #fff
+            }
+
+           #about .button-white:hover span {
+                transform: translate3d(0, 0, 0)
+            }
+
+          #about  .button-white:before {
+                display: none
+            }
+
+          #about  h2 {
+                font-weight: bold;
+                line-height: 1.1;
+                margin: 0 0 20px 0;
+                color: #2B2B2B
+            }
+
+         #about   h2 {
+                position: relative;
+                font-size: 50px
+            }
+
+           #about h2:before {
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 0;
+                z-index: -1;
+                width: 90px;
+                height: 90px;
+                background: linear-gradient(90deg, var(--blue), var(--blue2));;
+                opacity: 0.8;
+                filter: blur(35px)
+            }
+
+           #about h2 span {
+                position: relative;
+                z-index: 1
+            }
+
+           #about img {
+                max-width: 100%;
+                height: auto
+            }
+
+           #about .block-number {
+                position: absolute !important;
+                top: -36px;
+                left: 0;
+                display: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.5;
+                background: linear-gradient(90deg, #B3E042 0%, #65AB0E 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent
+            }
+
+          
+
+          #about  h2:before {
+                animation: pulse 3s ease infinite
+            }
+
+            @keyframes pulse {
+                50% {
+                    transform: scale(0.5);
+                    filter: blur(25px)
+                }
+            }
+
+            @media (max-width: 1200px) {
+
+                h2 {
+                    font-size: 40px
+                }
+
+                .m-bottom {
+                    margin-bottom: 100px
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+               #about .m-bottom {
+                    margin-bottom:70px
+                }
+
+              #about  h2 {
+                    font-size: 34px
+                }
+
+               #about h2:before {
+                    top: -10px;
+                    width: 45px;
+                    height: 45px;
+                    filter: blur(20px)
+                }
+
+              #about  .block-number {
+                    top: -31px
+                }
+            }
+
+            @media (max-width: 760px) {
+              #about  .m-bottom {
+                    margin-bottom:60px
+                }
+
+               #about h2 {
+                    font-size: 24px
+                }
+
+               #about .button {
+                    font-size: 16px
+                }
+
+              /* #about  .aos-init {
+                    opacity: 1 !important;
+                    transform: none !important
+                } */
+            }
+
+           
+
+            /* [data-aos][data-aos][data-aos-delay="100"] {
+                transition-delay: 0
+            }
+
+            [data-aos][data-aos][data-aos-delay="100"].aos-animate {
+                transition-delay: .1s
+            }
+
+            [data-aos][data-aos][data-aos-delay="200"] {
+                transition-delay: 0
+            } */
+
+            /* [data-aos][data-aos][data-aos-delay="200"].aos-animate {
+                transition-delay: .2s
+            }
+
+            [data-aos][data-aos][data-aos-delay="300"] {
+                transition-delay: 0
+            }
+
+            [data-aos][data-aos][data-aos-delay="300"].aos-animate {
+                transition-delay: .3s
+            }
+
+            [data-aos^=fade][data-aos^=fade] {
+                opacity: 0;
+                transition-property: opacity,transform
+            }
+
+            [data-aos^=fade][data-aos^=fade].aos-animate {
+                opacity: 1;
+                transform: translateZ(0)
+            }
+
+            [data-aos=fade-up] {
+                transform: translate3d(0,100px,0)
+            }
+
+            [data-aos=fade-left] {
+                transform: translate3d(100px,0,0)
+            } */
+
+            #about .about-video {
+                cursor: pointer;
+                border-radius: 8px;
+                margin-top: 9px;
+                overflow: hidden;
+                position: relative
+            }
+
+            /* #about .about-video .about-video-preview {
+                transform: translateX(-60%)
+            } */
+
+            #about .about-video img {
+                height: 452px;
+                width: 100% !important;
+            }
+
+            #about .about-info {
+                   display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    justify-content: space-between;
+            }
+
+            #about .about-img {
+                min-width: 464px;
+                position: relative
+            }
+
+            #about .about-img-text {
+                background: #fff;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                color: #595959;
+                box-shadow: 0px 5px 20px rgba(232,232,232,0.7);
+                border-radius: 5px;
+                position: absolute;
+                top: -25px;
+                left: -40px;
+                z-index: 2
+            }
+
+            #about .about-img-text p {
+                white-space: nowrap;
+                color: #59595980
+            }
+
+            #about .about-right {
+                padding-left: 35px
+            }
+
+            #about .about-right h2 {
+                margin-top: 1px
+            }
+
+            #about .about-right .about-info-text {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 130%;
+                color: #2B2B2B
+            }
+
+            #about .about-right .about-info-desc {
+                font-size: 18px;
+                line-height: 150%;
+                color: #595959;
+                margin-top: 20px;
+                margin-bottom: 30px
+            }
+
+            #about .about-right .about-info-desc a {
+                color: var(--blue3);
+                transition: all 0.3s ease-in-out
+            }
+
+            #about .about-right .about-info-desc a:hover {
+                text-decoration: underline
+            }
+
+            #about .about-right .about-info-buttons {
+                display: flex;
+                align-items: center
+            }
+
+            #about .about-right .about-info-buttons .button {
+                margin-right: 20px
+            }
+
+            #about .about-right .about-info-buttons .button.button-white {
+                margin-right: 0;
+                padding: 14px 26px
+            }
+
+            #about .about-benefits {
+                display: flex;
+                margin: 40px -15px 0
+            }
+
+            #about .about-benefits .about-benefits-item {
+                flex: 1 1 25%;
+                width: 25%;
+                max-width: 25%;
+                padding: 0 15px
+            }
+
+            #about .about-benefits .about-benefits-item .about-benefits-item-wrap {
+                background: var(--blue2);
+                border-radius: 5px;
+                padding: 30px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between
+            }
+
+            #about .about-benefits .about-benefits-item .about-benefits-item-wrap img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+                margin-bottom: 20px
+            }
+
+            #about .about-benefits .about-benefits-item .about-benefits-item-wrap .about-benefits-item-text {
+                font-size: 18px;
+                line-height: 130%;
+                color: #2B2B2B
+            }
+
+            #about .about-benefits .about-benefits-item .about-benefits-item-wrap .about-benefits-item-text a {
+                text-decoration: underline;
+                color: #333
+            }
+
+            #about .about-benefits .about-benefits-item .about-benefits-item-wrap .about-benefits-item-text p {
+                margin: 0
+            }
+
+            @media (max-width: 1340px) {
+                #about .about-img-text {
+                    left:0
+                }
+            }
+
+            @media (max-width: 1200px) {
+
+                #about .about-right .about-info-buttons {
+                    flex-wrap: wrap
+                }
+
+                #about .about-right .about-info-buttons .button {
+                    width: 380px;
+                    text-align: center;
+                    margin-bottom: 15px
+                }
+
+                #about .about-right .about-info-buttons .button:last-child {
+                    margin-bottom: 0
+                }
+
+                .about-benefits .about-benefits-item .about-benefits-item-wrap {
+                    height: 100%
+                }
+            }
+
+            @media (max-width: 1000px) {
+                #about {
+                    padding-top:70px
+                }
+
+                #about .about-info {
+                    flex-direction: column;
+                    padding: 0 40px
+                }
+
+                #about .about-video {
+                    overflow: initial;
+                    margin-top: 0px
+                }
+
+                #about .about-video .about-video-preview {
+                    transform: translateX(0%)
+                }
+
+                #about .about-video img {
+                    height: auto
+                }
+
+                #about .about-benefits {
+                    flex-wrap: wrap;
+                    margin-bottom: -30px
+                }
+
+                #about .about-benefits .about-benefits-item {
+                    flex: 1 1 50%;
+                    width: 50%;
+                    max-width: 50%;
+                    margin-bottom: 30px
+                }
+
+                #about .about-img {
+                    width: 100%;
+                    max-width: 800px;
+                    margin-bottom: 30px;
+                    margin-left: auto;
+                    margin-right: auto
+                }
+
+                #about .about-img-text {
+                    left: -20px;
+                    padding: 10px
+                }
+
+                #about .about-right {
+                    padding-left: 0
+                }
+
+                #about .about-right h2 {
+                    max-width: 550px
+                }
+
+                #about .about-right .about-info-buttons {
+                    flex-flow: column nowrap;
+                    align-items: stretch
+                }
+            }
+
+            @media (max-width: 760px) {
+
+                #about {
+                    padding-top: 60px
+                }
+
+                #about .about-info {
+                    padding: 0
+                }
+
+                #about .about-img {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    max-width: 100%;
+                    min-width: auto;
+                    height: auto;
+                    margin: 0 auto 60px
+                }
+
+                #about .about-img-text {
+                    position: initial;
+                    max-width: 100%;
+                    margin-top: 10px
+                }
+
+                #about .about-right .about-info-text {
+                    font-size: 20px
+                }
+
+                #about .about-right .about-info-buttons {
+                    margin: 0 auto -15px
+                }
+
+                #about .about-right .about-info-buttons .button {
+                    flex: 1 1 100%;
+                    width: 100%;
+                    max-width: 375px
+                }
+
+                #about .about-right .about-info-buttons .button:not(.button-white) {
+                    margin: 0 auto 15px
+                }
+
+                #about .about-right .about-info-buttons .button.button-white {
+                    margin: 0 auto
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                #about .about-benefits {
+                    margin:40px auto -20px
+                }
+
+                #about .about-benefits .about-benefits-item {
+                    flex: 1 1 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                    padding: 0
+                }
+            }
