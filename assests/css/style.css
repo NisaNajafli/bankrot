@@ -1277,27 +1277,41 @@ nav .social_icons a:hover{
 
 .contact-footer {
     background: var(--blue2);      
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .onfooter-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 60px 0;
-    border-radius: 28px;
+    padding: 60px 20px;
+    border-radius: 15px;
     justify-content: space-between;
+
 }
+
 .contact-left{
     background-color:#fff;
-    padding: 20px 40px;
-     border-radius: 30px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    padding: 30px;
 }
 .contact-left h2 {
-    font-size: 42px;
+    font-size: 35px;
     font-weight: 700;
     color: var(--blue);
     margin-bottom: 20px;
+}
+.form-icons{
+    display: grid
+;
+    grid-template-columns: 70% 20%;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .contact-left p {
@@ -1308,16 +1322,17 @@ nav .social_icons a:hover{
 }
 
 .contact-form input {
-    width: 50%;
+    width: 100%;
     padding: 10px 0;
     margin-bottom: 25px;
-    font-size: 16px;
     border: none;
-    border-bottom: 2px solid var(--blue3);
+    border-bottom: 1px solid var(--blue3);
     border-radius: 0;
     background: transparent;
     outline: none;
     color: #333;
+    font-size: 13px;
+    height: 34px;
 }
 
 .contact-form input::placeholder {
@@ -1333,7 +1348,7 @@ nav .social_icons a:hover{
 }
 
 .contact-btn {
-    width: 300px;
+    width: 100%;
     background: var(--blue);
     color: #fff;
     border: none;
@@ -1342,27 +1357,25 @@ nav .social_icons a:hover{
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    margin-bottom: 25px;
 }
 
 .messengers {
     display: flex;
-    border-radius: 10px;
-    border: 2px solid var(--blue);
+    border-radius: 15px;
+    border: 1px solid var(--blue);
     padding: 10px;
     gap: 10px;
+    justify-content: center;
 }
 
 .messengers a {
-    /* width: 55px;
-    height: 55px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .messengers img {
-    width: 28px;
+    width: 32px;
 }
 
 .contact-right img {
