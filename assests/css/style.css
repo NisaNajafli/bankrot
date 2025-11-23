@@ -992,7 +992,9 @@ nav .social_icons img {
 .services_section .press-card__title {
     color: #333
 }
-
+.services_section.services-page .services_section-grid{
+    grid-template-columns: 1fr 1fr;
+}
 .review-slide {
     background: #fff !important;
     border-radius: 12px;
@@ -1077,6 +1079,9 @@ nav .social_icons img {
     padding: 20px 0;
 }
 
+.examples_section.examples-page .examples-content{
+    grid-template-columns: 1fr 1fr;
+}
 .examples-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1085,7 +1090,6 @@ nav .social_icons img {
 }
 
 .examples__item {
-    margin-bottom: 40px;
     padding: 40px;
     border: 1px solid #cdd1d8;
     border-radius: 4px;
@@ -2484,8 +2488,16 @@ nav .social_icons img {
         --offset-indent: -3.125rem;
                 --radius-lg: 3.75rem;
     }
-.breadcrumb{
-    margin-top: 150px;
+    .breadcrumb{
+        margin-top: 120px;
+background-color: #121f28;
+    color: #fff;
+    margin-bottom: 20px;
+    }
+.breadcrumbs{
+    font-size: 17px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 .contact-page-hero{
     border-radius: 3.75rem 3.75rem 0 0;
@@ -2540,4 +2552,136 @@ nav .social_icons img {
     left: 0;
     width: 100% !important;
     border-radius: 3.75rem 3.75rem 0 0;
+}
+
+/* About page */
+.about-page{
+    background-color: #eeeeee;
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+.about-page .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    justify-content: space-between;
+}
+.about-page-left{
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: #0000001f 0px 1px 2px 0px;
+    box-shadow: #0000001f 0px 1px 2px 0px;
+    padding-top: 44px;
+    padding-right: 44px;
+    padding-bottom: 48px;
+    padding-left: 44px;
+}
+.about-page-left span{
+    color: var(--blue);
+    font-weight: 700;
+}
+.about-page-left img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.about-page-right {
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: #0000001f 0px 1px 2px 0px;
+    box-shadow: #0000001f 0px 1px 2px 0px;
+    padding: 44px;
+    position: sticky;
+    top: 150px; 
+    height: fit-content;
+}
+
+.about-page-right img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 260px;
+    display: block;
+}
+.about-page p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color:var(--text-black);
+    line-height: 20px;
+}
+
+/* Events page */
+
+.events-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+.event-card{
+    height: 300px;
+    position: relative;
+}
+.event-card::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 33, 97);
+    background: linear-gradient(0deg, rgb(0 33 97 / 55%) 45%, rgb(255 255 255 / 0%) 100%);
+    height: 100%;
+    width: 100%;
+}
+.event-card img{
+        height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.event-card .event-text{
+        background: #0021613d;
+    transition: background 0.5s;
+    cursor: pointer;
+    position: absolute;
+    /* padding: 30px 26px; */
+    transition: all 0.5s;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+.event-card .event-text h2{
+        bottom: 60px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    transition: color 0.5s;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 0.1px;
+    transition: color 0.5s;
+    color: #fff;
+}
+.event-card .event-text a{
+    padding-left: 0;
+    bottom: 33px;
+    position: absolute;
+    left: 20px;
+    border: 2px solid #fff;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    transition: color 0.5s, border-color 0.5s;
+    color: #fff;
+}
+.event-card:hover .event-text{
+     background: #0021619e;
+    height: 100%;
+    padding: 30px 26px;
 }
