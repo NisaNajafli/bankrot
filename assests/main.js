@@ -13,6 +13,16 @@ var swiper = new Swiper(".reviewMainSwiper", {
 
     speed: 700,
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const swiper = new Swiper(".myHeroSwiper", {
+        loop: true,
+        speed: 600,
+        navigation: {
+            nextEl: "[data-slider-button='2']",
+            prevEl: "[data-slider-button='1']"
+        }
+    });
+});
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   if (window.scrollY > 150) {
@@ -30,3 +40,8 @@ window.addEventListener("scroll", function () {
 //   }
 // });
 document.getElementById("year").textContent = new Date().getFullYear()
+const mainButton = document.getElementById('main-button');
+
+mainButton.addEventListener('click', function () {
+  this.classList.toggle('open');
+});
