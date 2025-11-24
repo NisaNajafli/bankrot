@@ -75,11 +75,11 @@
                 <div class="menu_nav">
                     <ul>
                         <li><a class="menu_link active" href="/about.html">О компании</a></li>
-                        <li><a class="menu_link" href="/services.html">Услуги</a></li>
-                        <li><a class="menu_link" href="/reviews.html">Отзывы клиентов</a></li>
-                        <li><a class="menu_link" href="/cases.html">Примеры дел</a></li>
+                        <li><a class="menu_link" href="">Услуги</a></li>
+                        <li><a class="menu_link" href="">Отзывы клиентов</a></li>
+                        <li><a class="menu_link" href="">Примеры дел</a></li>
                         <li><a class="menu_link" href="/team.html">Команда</a></li>
-                        <li><a class="menu_link" href="/events.html">Мероприятия </a></li>
+                        <li><a class="menu_link" href="">Мероприятия </a></li>
                         <li><a class="menu_link" href="/contact.html">Контакты</a></li>
                     </ul>
                 </div>
@@ -93,87 +93,139 @@
             </nav>
         </div>
     </header>
-
-    <main>
-        <div aria-label="breadcrumb" class="breadcrumb">
+        <main>
+             <div aria-label="breadcrumb" class="breadcrumb">
             <div class="container">
                 <div class="breadcrumbs">
-                    <a href="/index.html">Главная</a> » Мероприятия
+                    <a href="/index.html">Главная</a> »  <a href="/blogs.html">Блоги</a> » Как законно списать долги и начать жизнь с чистого листа
+
                 </div>
             </div>
         </div>
 
-        <section class="events-section">
-            <div class="container">
-                <div class="events-cards">
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=a919352c665ea0e6e9d4b949cb4602e5a26db042-9182431-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2>Участие в юридическом форуме по банкротству</h2>
-                        <a href="/event.html">Подробнее</a>
+        <section class="pb-5">
+        <div class="container">
+            <div class="fullArticle_flex d-flex gap-3 justify-content-between">
+                    <div class="leftAll_article">
+                        <div class="left-full blog_full">
+                            <div>
+                                <img src="https://avatars.mds.yandex.net/i?id=66f226f009fd455ad7b33dfbe4b5d914eeaa0852-9147217-images-thumbs&n=13" alt="blog-img">
+                                <h1 class="fs-1 fw-bolder pb-4 text-uppercase text-center"> Как законно списать долги и начать жизнь с чистого листа</h1>
+                                <div>
+                                    <p>
+                                    Финансовые трудности могут настигнуть даже самых ответственных и аккуратных людей. Потеря работы, болезни, снижение дохода или рост обязательств — всё это приводит к ситуации, когда выплачивать кредиты становится невозможно. В такие моменты важен не страх, а правильное понимание своих законных возможностей. Российское законодательство предусматривает несколько механизмов, позволяющих законно списать долги и начать жизнь заново — без постоянных звонков коллекторов, штрафов и давления банков.
+                                </p>
+                                <p>
+                                    Чаще всего причиной становится не одно событие, а их совокупность. Человек продолжает платить по кредитам, используя новые займы, что приводит к накапливанию процентов и штрафов. В определённый момент сумма долга превышает реальный доход, и ситуация становится критической. Важно понимать: законом предусмотрены способы защиты граждан, оказавшихся в такой ситуации.
+                                </p>
+                                <p>
+                                    Списание долгов — это не путь бегства, а законный инструмент восстановления финансовой стабильности. Каждый человек имеет право начать жизнь заново, без долговой нагрузки и постоянного стресса. Если долги стали неподъёмными, важно не откладывать решение проблемы — чем раньше начать процедуру, тем быстрее вы получите возможность двигаться вперёд.
+                                </p>
+                                </div>
+                    
+                    <div class="box-body full-tags">
+                        <div class="d-none keywords">Современная медицина, мифы о здоровье, антибиотики, простуда, грипп, бактериальные инфекции, вирусные заболевания, гипервитаминоз, биодобавки, иммунитет</div>
+                        <div class="smallPostBoxs"><span class="keyword-item">Современная медицина</span><span class="keyword-item">мифы о здоровье</span><span class="keyword-item">антибиотики</span><span class="keyword-item">простуда</span><span class="keyword-item">грипп</span><span class="keyword-item">бактериальные инфекции</span><span class="keyword-item">вирусные заболевания</span><span class="keyword-item">гипервитаминоз</span><span class="keyword-item">биодобавки</span><span class="keyword-item">иммунитет</span></div>
+                        <script>
+
+                            let text = document.querySelector('.keywords').innerText;
+
+                            let arr = text.split(',').map(el => el.trim()).filter(el => el.length > 0);
+
+                            let container = document.querySelector('.smallPostBoxs');
+                            container.innerHTML = ''; 
+
+                            arr.forEach(el => {
+                                let span = document.createElement('span');
+                                span.textContent = el;
+                                span.classList.add('keyword-item'); 
+                                container.appendChild(span);
+                            });
+                        </script>
+                    </div>
+                    
+                                </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="extratexts_both">
+                            </div>
                         </div>
                     </div>
-                    <div class="event-card">
-                        <img src="https://www.rhythmsystems.com/hubfs/iStock-1513285144.jpg" alt="">
-                        <div class="event-text">
-                            <h2>Семинар «Финансовая грамотность и защита прав»</h2>
-                        <a href="">Подробнее</a>
+                    <div class="d-none d-lg-block sideBar">
+                        <div class="blog_filter_box">
+                        <h3>Другие блоги</h3>
+                        <ul class="blog_filter_list">
+                            <li class="nav-item departments_info">
+                                <a>Банкротство физического лица: мифы и реальность</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Что делать, если банк подал в суд за неуплату кредита</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Как сохранить имущество при процедуре банкротства</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Реструктуризация долга — альтернатива банкротству</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Защита прав потребителей: как вернуть свои деньги</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Как выбрать надёжную юридическую компанию</a>
+                            </li>
+                            <li class="nav-item departments_info">
+                                <a>Ошибки, из-за которых отклоняют заявление о банкротстве</a>
+                            </li>
+                        </ul>
+
                         </div>
                     </div>
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=c77c13e2b937245554c9fd23dedf94ebc4cd5ab43629bd15-5661324-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2> Конференция по реструктуризации долгов</h2>
-                        <a href="">Подробнее</a>
-                        </div>
+                </div>      
+            
+            
+            
+        </div>
+    </section>
+
+    <section class="contact-footer container">
+        <div class="">
+            <div class="onfooter-content">
+                <div class="contact-left">
+                <h2 data-aos="fade-up" class="aos-init aos-animate">Остались вопросы?</h2>
+                <p>
+                    Если у вас остались вопросы, связанные с приобретением упаковки
+                    оптом или в розницу или же вас интересуют условия сотрудничества,
+                    то оставьте заявку, наши менеджеры проконсультируют вас
+                </p>
+
+                <div class="form-icons">
+                    <form class="contact-form">
+                    <input type="text" placeholder="Имя">
+
+                    <input type="text" placeholder="Телефон">
+
+                    <div class="form-buttom">
+                        <button class="contact-btn">ОТПРАВИТЬ</button>
                     </div>
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=7e3ffbecd426f8fe1820990f8df971a2e8e20a8d-5232012-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2>Бесплатная консультация для граждан с долгами</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=aa850bfec0413023dd2227d6cfe4c5af4480765c-6383479-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2>Мастер-класс «Как списать долги законно»</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=9851bd185a2b501521179c271b3fffc5532e4fa7-12493630-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2>Круглый стол с судебными экспертами</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://d.newsweek.com/en/full/2135319/empty-office.jpg" alt="">
-                        <div class="event-text">
-                            <h2>День открытых дверей компании Агрос</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://avatars.mds.yandex.net/i?id=54e837875cd73199fbaa4fb5b6f2aeaa10580659-5278475-images-thumbs&n=13" alt="">
-                        <div class="event-text">
-                            <h2>Вебинар «Права потребителей и кредитные споры»</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://www.academyoflearning.com/wp-content/uploads/2015/10/Legal-Training-1.png" alt="">
-                        <div class="event-text">
-                            <h2>Образовательная встреча для начинающих юристов</h2>
-                        <a href="">Подробнее</a>
-                        </div>
-                    </div>
+                </form>
+                <div class="messengers">
+                        <a href="#"><img src="/assests/img/wpicon.svg" alt=""></a>
+                        <a href="#"><img src="/assests/img/tgicon.webp" alt=""></a>
+                </div>
                 </div>
             </div>
-        </section>
-    </main>
 
+            <div class="contact-right">
+                <img src="https://nypost.com/wp-content/uploads/sites/2/2019/11/lawsuit.jpg?quality=75&amp;strip=all&amp;w=1024" alt="">
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+        </main>
      <footer class="footer">
     <div class="container">
         <div class="footer__main ">
@@ -201,7 +253,7 @@
         <a href="/team.html" class="footer-nav__link" title="">Наша команда </a>
       </li>
           <li class="footer-nav__item">
-        <a href="/services.html" class="footer-nav__link" title="">Услуги </a>
+        <a href="" class="footer-nav__link" title="">Услуги </a>
       </li>
           <li class="footer-nav__item">
         <a href="/contact.html" class="footer-nav__link" title="">Контакты</a>
@@ -212,16 +264,16 @@
     <a href="" class="footer-nav__title" title="">Навигация</a>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-        <a href="/reviews.html" class="footer-nav__link" title="">Отзывы клиентов</a>
+        <a href="" class="footer-nav__link" title="">Отзывы клиентов</a>
       </li>
           <li class="footer-nav__item">
-        <a href="/cases.html" class="footer-nav__link" title="">Примеры дел</a>
+        <a href="" class="footer-nav__link" title="">Примеры дел</a>
       </li>
           <li class="footer-nav__item">
-        <a href="/events.html" class="footer-nav__link" title="">Мероприятия</a>
+        <a href="" class="footer-nav__link" title="">Мероприятия</a>
       </li>
           <li class="footer-nav__item">
-        <a href="/blogs.html" class="footer-nav__link" title="">Блоги</a>
+        <a href="" class="footer-nav__link" title="">Блоги</a>
       </li>
         </ul>
       </div>

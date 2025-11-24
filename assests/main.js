@@ -31,6 +31,25 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.teamswiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // autoplay: { 
+    //   delay: 3000, 
+    //   disableOnInteraction: false 
+    // },
+    pagination: { el: '.swiper-pagination' },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1200: { slidesPerView: 5 }
+    }
+  });
+});
+
 // window.addEventListener("scroll", () => {
 //   const header = document.getElementById("site-header");
 //   if (window.scrollY > 250) {        
