@@ -64,3 +64,52 @@ const mainButton = document.getElementById('main-button');
 mainButton.addEventListener('click', function () {
   this.classList.toggle('open');
 });
+document.querySelector('.js-open-region').addEventListener('click', function () {
+            document.getElementById('js-region-fancy').classList.add('show-regions');
+        });
+
+        // Region panelini bağla
+        document.querySelector('.js-close-region').addEventListener('click', function () {
+            document.getElementById('js-region-fancy').classList.remove('show-regions');
+        });
+
+
+        // Şəhər seçimi
+        document.querySelectorAll('.regions-full-list__city a').forEach(function(cityLink) {
+            cityLink.addEventListener('click', function() {
+
+                let selectedCity = this.textContent.trim();
+
+                // Yuxarı blokda "Ваш город: ..."
+                let cityTextBlock = document.querySelector('.b-title-h3.hide-on-mobile');
+                if (cityTextBlock) {
+                    cityTextBlock.textContent = "Ваш город: " + selectedCity;
+                }
+
+                // Header-də seçilmiş şəhər
+                let regionSpan = document.querySelector('#js-region span');
+                if (regionSpan) {
+                    regionSpan.textContent = selectedCity;
+                }
+
+                // Paneli bağla
+                document.getElementById('js-region-fancy').classList.remove('show-regions');
+
+                // Yadda saxla
+                localStorage.setItem('selectedCity', selectedCity);
+            });
+        });
+
+
+        // Səhifə açılarkən yadda saxlanmış şəhər
+        document.addEventListener('DOMContentLoaded', function() {
+            let savedCity = localStorage.getItem('selectedCity');
+            if (savedCity) {
+
+                let cityTextBlock = document.querySelector('.b-title-h3.hide-on-mobile');
+                if (cityTextBlock) cityTextBlock.textContent = "Ваш город: " + savedCity;
+
+                let regionSpan = document.querySelector('#js-region span');
+                if (regionSpan) regionSpan.textContent = savedCity;
+            }
+        });
