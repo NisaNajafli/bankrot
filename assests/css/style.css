@@ -2438,7 +2438,7 @@ nav .social_icons img {
           margin-top: 120px;
     background-color: #121f28;
     color: #ffffff9e;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     }
 .breadcrumbs{
     font-size: 17px;
@@ -2534,10 +2534,6 @@ nav .social_icons img {
     padding-bottom: 48px;
     padding-left: 44px;
 }
-.about-page-left span{
-    color: var(--blue);
-    font-weight: 700;
-}
 .about-page-left img{
     width: 100%;
     height: 280px;
@@ -2551,7 +2547,7 @@ nav .social_icons img {
     box-shadow: #0000001f 0px 1px 2px 0px;
     padding: 44px;
     position: sticky;
-    top: 150px; 
+    top: 130px; 
     height: fit-content;
 }
 
@@ -2565,7 +2561,7 @@ nav .social_icons img {
     margin-bottom: 20px;
     font-size: 16px;
     color:var(--text-black);
-    line-height: 20px;
+    line-height: 22px;
 }
 
 /* Events page */
@@ -2671,7 +2667,7 @@ nav .social_icons img {
 .teampersonal-contact .container{
     display: flex;
     gap: 70px;
-    justify-content: center
+    justify-content: left
 }
 .teampersonal-contact .contact-content{
     display: flex;
@@ -2723,7 +2719,7 @@ nav .social_icons img {
     margin-bottom: 24px;
     font-size: 16px;
     color: var(--text-black);
-    font-size: 500;
+    line-height: 22px;
     text-align: justify;
 }
 .teampersonal-teamswiper h2{
@@ -2993,18 +2989,22 @@ nav .social_icons img {
     border-radius: 20px
 }
 .event-content .event-content-texts h2{
-    color: var(--blue);
+    color:#333;
     font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 .event-content .event-content-texts p{
     margin-bottom: 15px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     text-align: justify;
 }
-
+.event-img{
+    position: sticky;
+    top: 130px;
+    height: fit-content;
+}
 .b-regions{
     z-index: 0;
     color: var(--blue);
@@ -3338,9 +3338,6 @@ nav .social_icons img {
 }
 
 .qs-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
     background: #fff;
     border-radius:8px;
     padding: 30px;
