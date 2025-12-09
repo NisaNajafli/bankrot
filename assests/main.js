@@ -1,18 +1,36 @@
-var swiper = new Swiper(".reviewMainSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
-    },
-     autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-    },
-
-    speed: 700,
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper(".reviewMainSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+        },
+        speed: 700,
+    });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper(".reviewvideoSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+        },
+        speed: 700,
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const swiper = new Swiper(".myHeroSwiper", {
         loop: true,
