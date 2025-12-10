@@ -7,9 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
             delay: 3500,
             disableOnInteraction: false,
         },
-        navigation: {
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
+        pagination: { el: '.swiper-pagination' },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: {
+        0: { slidesPerView: 1 },
+        571: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
         },
         speed: 700,
     });
@@ -23,9 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
             delay: 3500,
             disableOnInteraction: false,
         },
-        navigation: {
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
+        pagination: { el: '.swiper-pagination' },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: {
+        0: { slidesPerView: 1 },
+        571: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
         },
         speed: 700,
     });

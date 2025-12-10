@@ -1413,11 +1413,6 @@ nav .social_icons img {
     margin: 0;
 }
 
-.case-page .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 .team-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -3992,6 +3987,17 @@ nav .social_icons img {
             .press-card:hover .press-card__hover {
       transform: translateY(0) !important;
   }
+  .regions-list__text{
+    font-size: 13px;
+  }
+ .b-title-h3.hide-on-mobile, .regions-list__title, .regions-list__inner .b-title-h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+ .b-regions-list {
+    padding: 20px;
+ }
     .container {
         padding: 0 10px  !important;
     }
