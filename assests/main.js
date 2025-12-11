@@ -168,3 +168,4 @@ document.querySelector('.js-open-region').addEventListener('click', function () 
                 if (regionSpan) regionSpan.textContent = savedCity;
             }
         });
+        

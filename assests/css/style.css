@@ -445,7 +445,22 @@ nav .social_icons img {
     width: 25px;
 }
 
-
+.bankruptcy__list {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 23px;
+    list-style-type: disc;
+    flex-wrap: wrap;
+    gap: 17px 40px;
+}
+.bankruptcy__item {
+    width:calc(100% / 2 - 20px);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-variant: small-caps;
+    line-height: 1.33;
+}
 .hero-slider {
     position: relative;
     width: 100%;
@@ -1434,6 +1449,9 @@ nav .social_icons img {
     overflow: hidden;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.team-card * {
+    pointer-events: none !important;
 }
 
 .team-img {
@@ -3629,22 +3647,14 @@ nav .social_icons img {
 
 .process-item {
     background: #fff;
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-    transition: 0.4s ease;
+    padding: 25px;
+    border: 1px solid #e9e9e9;
     position: relative;
     min-height: 450px;
 }
-
-.process-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.09);
-}
-
 .process-icon {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 20px;
 }
 
@@ -3693,6 +3703,19 @@ nav .social_icons img {
     nav .social_icons{
         display: none;
     }
+    .process-arrow{
+        display: none;
+    }
+    .process-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+    .process-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
         nav .menu_nav .menu_link {
         padding: 0 8px;
         font-size: 12px;
@@ -3969,11 +3992,18 @@ nav .social_icons img {
     }
 
 
+
 }
 @media(max-width:768px){
     #about h2 {
         font-size: 18px;
     }
+    .serviceinner-section h3, .process-section h3{
+        font-size: 21px;
+    }
+        .serviceinner-section h3{
+            margin-top: 20px;
+        }
         #about .about-right .about-info-text {
         font-size: 15px;
     }
@@ -4009,6 +4039,12 @@ nav .social_icons img {
     margin-bottom: 20px;
     margin-top: 20px;
  }
+ .process-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .process-item{
+        min-height: 100%;
+    }
  .team-img{
     height: 300px;
  }
@@ -4021,9 +4057,6 @@ nav .social_icons img {
     opacity: 1;
  }
 
- .press-card__text {
-    color: black;
- }
  .b-regions-list {
     padding: 20px;
  }
@@ -4216,6 +4249,16 @@ nav .social_icons img {
     .slider-buttons{
         left: 30px;
     }
+    .bankruptcy__item {
+    width: 100%;
+    font-size: 16px;
+}
+    .serviceinner-form.hero-form-box {
+        top: 73%;
+    }
+    .bankruptcy__list{
+    gap: 10px;
+}
         .hero-form-box {
         position: absolute;
         top: 64%;
