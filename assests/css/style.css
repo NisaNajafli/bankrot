@@ -236,16 +236,7 @@ header.scrolled::after {
     height: 0 !important;
 }
 
-header::after {
-    position: absolute;
-    content: "";
-    top: 15%;
-    height: 100%;
-    left: -255px;
-    width: 100%;
-    background: url(../img/head-bgnew.webp) no-repeat;
-    z-index: 0;
-}
+
 .mobile-menu-btn {
   cursor: pointer;
   z-index: 99999;
@@ -315,6 +306,23 @@ header::after {
 .mobile-menu__close:hover svg path {
   opacity: .6;
   transform: scale(1.05);
+}
+.menu_nav-mobil .footer__text span{
+    color: #333 !important;
+    font-weight: 600;
+}
+.menu_nav-mobil >a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.menu_nav-mobil >a svg{
+    width: 20px;
+    height: 20px;
 }
 
 .menu_nav-mobil ul {
@@ -441,7 +449,7 @@ nav .social_icons img {
 .hero-slider {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .hero-slider .button {
@@ -3984,9 +3992,15 @@ nav .social_icons img {
     }
         #about .about-video img {
             width: 100%;}
-            .press-card:hover .press-card__hover {
+            /* .press-card:hover .press-card__hover {
       transform: translateY(0) !important;
-  }
+  } */
+   .press-card__hover{
+    transform: inherit !important;
+   }
+   .services_section .press-card__title, .press-card_desc, .press-card__text{
+    color:#fff
+   }
   .regions-list__text{
     font-size: 13px;
   }
@@ -3994,6 +4008,21 @@ nav .social_icons img {
     font-size: 21px;
     margin-bottom: 20px;
     margin-top: 20px;
+ }
+ .team-img{
+    height: 300px;
+ }
+.team-info{
+    top: 0px !important;
+ }
+ .team-card .press-card__bot{
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+ }
+
+ .press-card__text {
+    color: black;
  }
  .b-regions-list {
     padding: 20px;
@@ -4170,15 +4199,15 @@ nav .social_icons img {
     font-size: 16px;
     opacity: .7;
 }
-.hero-content a svg {
-    flex-shrink: 0;
-    background-color: #fff;
-    width: 40px;
-    fill: var(--blue3);
-    height: 40px;
-    padding: 13px;
-    border-radius: 50%;
-}
+    .hero-content a svg {
+        flex-shrink: 0;
+        background-color: #fff;
+        width: 30px;
+        fill: var(--blue3);
+        height: 30px;
+        padding: 9px;
+        border-radius: 50%;
+    }
 
 .slider-buttons__button {
         width: 50px;
@@ -4192,7 +4221,7 @@ nav .social_icons img {
         top: 64%;
         left: 30px;
         transform: translateY(-50%);
-        width: 270px;
+        width: 280px;
         padding: 15px;
         border-radius: 6px;
         z-index: 20;
