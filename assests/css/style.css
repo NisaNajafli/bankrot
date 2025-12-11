@@ -4221,10 +4221,10 @@ nav .social_icons img {
     font-size: 16px;
 }
     .hero-title {
-        font-size: 18px;
+        font-size: 21px;
     }
         .hero-subtitle {
-        font-size: 11px;
+        font-size: 13px;
         line-height: 20px;
         margin-bottom: 0px;
     }
@@ -4254,7 +4254,7 @@ nav .social_icons img {
     font-size: 16px;
 }
     .serviceinner-form.hero-form-box {
-        top: 73%;
+        top: 74%;
     }
     .bankruptcy__list{
     gap: 10px;
